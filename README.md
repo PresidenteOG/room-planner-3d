@@ -6,6 +6,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![Tauri](https://img.shields.io/badge/Tauri-24C8DB?style=flat&logo=tauri&logoColor=white)
+[![CI](https://github.com/PresidenteOG/room-planner-3d/actions/workflows/ci.yml/badge.svg)](https://github.com/PresidenteOG/room-planner-3d/actions/workflows/ci.yml)
 
 A desktop app for laying out rooms in 3D — place furniture from a catalog, plan in 2D, preview in
 3D, save and reload your layout.
@@ -30,6 +31,15 @@ Tauri 2 (Rust shell) + React + three.js.
 npm install
 npm run tauri dev
 ```
+
+## Tests
+
+```bash
+npm test
+```
+
+53 Vitest unit tests cover geometry, placement, the command/undo store, the room document and the
+`.roomz` file format. CI runs them, plus the type-check and web build, on every push.
 
 ## Architecture
 
